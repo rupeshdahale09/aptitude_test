@@ -1,0 +1,131 @@
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.test-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  padding: 10px 20px;
+  background: #e7f3ff;
+  border-radius: 5px;
+}
+
+.timer-warning {
+  color: #dc3545;
+  background: #ffe7e7;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.questions-container {
+  margin-bottom: 30px;
+}
+
+.question-card {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.question-number {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 18px;
+}
+
+.question-marks {
+  color: #666;
+  font-size: 14px;
+}
+
+.question-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.option-label:hover {
+  border-color: #007bff;
+  background-color: #f0f7ff;
+}
+
+.option-label input[type="radio"] {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.option-label input[type="radio"]:checked + span {
+  font-weight: 600;
+  color: #007bff;
+}
+
+.option-label:has(input[type="radio"]:checked) {
+  border-color: #007bff;
+  background-color: #e7f3ff;
+}
+
+.test-actions {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.test-actions .btn {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+
