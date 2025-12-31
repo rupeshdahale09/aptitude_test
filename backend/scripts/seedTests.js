@@ -214,7 +214,7 @@ const generateVerbalAbilityQuestions = () => {
 
 const seedTests = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/aptitude-test');
+    await mongoose.connect(process.env.MONGODB_URI );
     console.log('Connected to MongoDB');
 
     // Clear existing tests (optional - comment out if you want to keep existing)

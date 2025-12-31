@@ -18,9 +18,13 @@ app.use('/api/leaderboard', require('./routes/leaderboard'));
 app.use('/api/admin', require('./routes/admin'));
 
 // Health check
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Server is running' });
+// app.get('/api/health', (req, res) => {
+//   res.json({ status: 'OK', message: 'Server is running' });
+// });
+app.get("/health", (req, res) => {
+  res.json({ status: "OK" });
 });
+
 
 // Connect to MongoDB
 mongoose
